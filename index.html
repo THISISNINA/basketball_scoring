@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+</head>
+<body>
+   
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <h1 class="home">HOME</h1>
+            <div class="scoring">
+                <p class="scores" id="addscores-home">0</p>
+            </div >
+            <div class="score-button">
+            <button id= "scored" onclick="onepoint()">+1</button>
+            <button id= "scored" onclick="twopoint()">+2</button>
+            <button id= "scored" onclick="threepoint()">+3</button>
+        </div>
+        </div>
+        <div class="column">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h1 class="guest">GUEST</h1>
+            <div class="scoring">
+                <p class="scores" id="addscores-guest">0</p>
+            </div>
+            <div class="score-button">
+                <button id= "scored"onclick="onepointg()">+1</button>
+                <button  id= "scored" onclick="twopointg()">+2</button>
+                <button id= "scored" onclick="threepointg()">+3</button>
+            </div>
+        </div>
+            <button id="restart-button" onclick="restart()">RESTART</button>
+    </div>
+    
+</div>
+<script src="index.js"></script>
+</body>
+</html>
